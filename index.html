@@ -1,0 +1,46 @@
+<!DOCTYPE HTML> 
+<html lang="PT-BT"> 
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="widh=device-widh,initial-scale=1.0"> 
+		<link rel="stylesheet" href="styleIndex.css"> 
+		<title> Calculadora </title>
+	</head>
+	<body> 
+			<div class="calculadora"> 
+				<h2><center> Calculadora </center></h2>
+				<center><p id="result"> </p></center>	
+				<table> 
+					<tr> 
+						<td> <button class= "botao" onclick="clean()"> c </button> </td>
+						<td> <button class= "botao" onclick="back()"> < </button> </td>
+						<td> <button class= "botao" onclick="insert('/')"> / </button> </td>
+						<td> <button class= "botao" style="background-color: #bcf4de; border-color: #bcf4de;"onclick="insert('*')"> x </button> </td>
+					</tr>
+					<tr> 
+						<td> <button class= "botao" onclick="insert('7')"> 7 </button> </td>
+						<td> <button class= "botao" onclick="insert('8')"> 8 </button> </td>
+						<td> <button class= "botao" onclick="insert('9')"> 9 </button> </td>
+						<td> <button class= "botao" style="background-color: #cde5d7; border-color: #cde5d7;" onclick="insert('-')"> - </button> </td>
+					</tr>
+					<tr> 
+						<td> <button class= "botao" onclick="insert('4')"> 4 </button> </td>
+						<td> <button class= "botao" onclick="insert('5')"> 5 </button> </td>
+						<td> <button class= "botao" onclick="insert('6')"> 6 </button> </td>
+						<td> <button class= "botao" style="background-color: #ded6d1; border-color: #ded6d1;" onclick="insert('+')"> + </button> </td>
+					</tr>
+					<tr> 
+						<td> <button class= "botao" onclick="insert('1')"> 1 </button> </td>
+						<td> <button class= "botao" onclick="insert('2')"> 2 </button> </td>
+						<td> <button class= "botao" onclick="insert('3')"> 3 </button> </td>
+						<td rowspan="2"> <button class= "botao" onclick="calcular()" style="height: 106px; background-color: #ffd7d5; border-color: #ffd7d5;"> = </button> </td>
+					</tr>		
+					<tr> 
+						<td colspan="2"> <button class= "botao" onclick="insert('0')" style="width: 106px;background-color: #eec6ca; border-color: #eec6ca;"> 0 </button> </td>
+						<td> <button class="botao" style="background-color: #ffd3e8; border-color: #ffd3e8;" onclick="insert('.')"> . </button> </td>
+					</tr>
+				</table>	
+		</div>
+		<script src="calculadora.js"></script>
+	</body>
+</html>
